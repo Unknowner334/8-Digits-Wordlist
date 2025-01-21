@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Set the output file name
+output_file="eight_digit_numbers.txt"
+
+# Number of numbers to generate in each chunk (e.g., 1 million numbers per chunk)
+chunk_size=1000000
+
+# Loop through the chunks
+for ((start=00000000; start<=99999999; start+=chunk_size)); do
+    # Loop through the numbers in the current chunk
+    for ((i=start; i<start+chunk_size; i++)); do
+        # Print the number as an 8-digit number with leading zeros
+        printf "%08d\n" $i >> "$output_file"
+    done
+    echo "Written numbers from $start to $((start + chunk_size - 1))"
+done
+
+echo "All 8-digit numbers have been saved to $output_file"
