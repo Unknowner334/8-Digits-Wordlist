@@ -7,5 +7,5 @@ bash 8digitnumbers
 ```
 To extract the compressed wordlist file
 ```
-tar -xvf archive_name.tar.xv
+tar -xvf 8_Digit_Wordlist.tar.xv
 ```
