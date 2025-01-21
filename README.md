@@ -5,3 +5,7 @@ cd 8-Digit-Wordlist
 sudo chmod +x 8digitnumbers
 bash 8digitnumbers
 ```
+To extract the compressed wordlist file
+```
+tar -xvf archive_name.tar.xv
+```
